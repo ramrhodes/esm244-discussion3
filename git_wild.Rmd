@@ -36,7 +36,7 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 
 ```{r break-it-1}
 ggplot(data = diamonds, aes(x = depth, y = cut)) +
-  geom_col() +
+  geom_col(aes(fill = cut)) +
   theme_minimal()
 ```
 
