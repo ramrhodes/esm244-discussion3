@@ -51,6 +51,11 @@ ggplot(data = diamonds, aes(x = depth, y = cut)) +
 ```
 
 ```{r break-it-2}
+# things are getting crazy by Rachel - the most unhelpful graph ever....
+
+ggplot(data = diamonds, aes(x = clarity, y = price)) +
+  geom_point(aes(fill = cut)) +
+  theme_dark()
 
 ```
 
