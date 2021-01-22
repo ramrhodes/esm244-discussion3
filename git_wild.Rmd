@@ -35,9 +35,19 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ## PART B: Make problems
 
 ```{r break-it-1}
+
+
+# A histogram!
+ggplot(data = diamonds, aes(x = depth)) +
+  geom_histogram(bins = 20, col = "black",
+  fill = "dodgerblue") +
+  theme_bw()
+
+# Great plot by Rachel
 ggplot(data = diamonds, aes(x = depth, y = cut)) +
   geom_col(aes(fill = cut)) +
   theme_minimal()
+
 ```
 
 ```{r break-it-2}
