@@ -52,6 +52,10 @@ ggplot(data = diamonds, aes(x = depth, y = cut)) +
 
 ```{r break-it-2}
 
+# random math
+
+2^2 + sqrt(6) - exp(9)
+
 ```
 
 ## END Discussion 3
