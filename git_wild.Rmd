@@ -18,7 +18,7 @@ library(tidyverse)
 ggplot(data = diamonds, aes(x = carat, y = price)) +
   geom_point(aes(color = cut)) +
   theme_bw() +
-  labs(title = "YOURNAME was here")
+  labs(title = "Rachel was here")
 ```
 
 ```{r partner_2a}
@@ -35,9 +35,9 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ## PART B: Make problems
 
 ```{r break-it-1}
-ggplot(data = diamonds, aes(x = depth, y = carat)) +
-  geom_point() +
-  theme_void()
+ggplot(data = diamonds, aes(x = depth, y = cut)) +
+  geom_col(aes(fill = cut)) +
+  theme_minimal()
 ```
 
 ```{r break-it-2}
